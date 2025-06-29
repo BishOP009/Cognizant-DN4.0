@@ -1,0 +1,104 @@
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+Table CUSTOMERS created.
+
+
+Table LOANS created.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Commit complete.
+
+
+CUSTOMER_ID CUSTOMER_NAME               AGE    BALANCE IS_VI
+----------- -------------------- ---------- ---------- -----
+          1 Alice Smith                  65       8000 FALSE
+          2 Bob Johnson                  55      12000 FALSE
+          3 Charlie Brown                70       5000 FALSE
+          4 Diana Prince                 40      15000 FALSE
+          5 Eve Adams                    62       9000 FALSE
+          6 Frank Green                  30       7000 FALSE
+
+6 rows selected. 
+
+
+   LOAN_ID CUSTOMER_ID INTEREST_RATE DUE_DATE     AMOUNT
+---------- ----------- ------------- -------- ----------
+       101           1           6.5 15/07/25      25000
+       102           2             7 01/08/25      50000
+       103           3           6.8 05/07/25      10000
+       104           4           7.2 20/09/25      30000
+       105           5             6 25/07/25      15000
+       106           6           5.8 10/08/25       8000
+
+6 rows selected. 
+
+
+--- Scenario 1: Applying Loan Interest Rate Discount ---
+Applied 1% discount for Customer: Alice Smith (ID: 1, Age: 65)
+Applied 1% discount for Customer: Charlie Brown (ID: 3, Age: 70)
+Applied 1% discount for Customer: Eve Adams (ID: 5, Age: 62)
+Loan interest rate discount process completed and changes committed.
+
+
+PL/SQL procedure successfully completed.
+
+
+--- Scenario 2: Promoting Customers to VIP Status ---
+Customer Bob Johnson (ID: 2) promoted to VIP with Balance: $12000
+Customer Diana Prince (ID: 4) promoted to VIP with Balance: $15000
+VIP status promotion process completed and changes committed.
+
+
+PL/SQL procedure successfully completed.
+
+
+--- Scenario 3: Sending Loan Due Reminders ---
+Charlie Brown (ID: 3), loan (ID: 103) of $10000 is due on 2025-07-05.
+Alice Smith (ID: 1), loan (ID: 101) of $25000 is due on 2025-07-15.
+Eve Adams (ID: 5), loan (ID: 105) of $15000 is due on 2025-07-25.
+Loan reminder process completed.
+
+
+PL/SQL procedure successfully completed.
+
